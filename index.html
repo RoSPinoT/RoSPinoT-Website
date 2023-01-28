@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <title>rospinot</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* css for main background image */
+
+        #main_header {
+            background-image: url(image/bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+
+        }
+
+        /* css for navigation bar */
+
+        .navbar {
+            width: 100%;
+            height: 5rem;
+            padding-top: 2rem;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .navbar ul li {
+            list-style: none;
+            font-size: 2rem;
+            color: white;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: white;
+            letter-spacing: 0.08rem;
+        }
+
+        .home {
+            margin-left: 10rem;
+        }
+
+        .home_link:hover,
+        .about_link:hover,
+        .services_link:hover,
+        .projects_link:hover,
+        .contactus_link:hover,
+        .team_link:hover {
+            color: blue;
+            transition: all .4s ease;
+            opacity: 0.7;
+        }
+
+        /* css for navigation bar content */
+
+
+        #navbar_content ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+
+        #navbar_content ul li {
+            list-style: none;
+        }
+
+        .navbar_content1 {
+            color: white;
+            font-weight: 700;
+            font-size: 4rem;
+            width: 40%;
+            margin-left: 19rem;
+            margin-top: 5rem;
+        }
+
+        .navbar_content2 {
+            margin-right: 5rem;
+
+        }
+
+        /* css for about us content */
+
+        #main_aboutus {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aboutus_section1 {
+            margin-top: 8rem;
+            margin-left: 10rem;
+        }
+
+        .section_bg1 {
+            width: 25%;
+            height: 20rem;
+            background-color: #8ed1fc;
+            opacity: 0.3;
+            border-radius: 3rem;
+            position: absolute;
+            z-index: -4;
+        }
+
+        .image1 {
+            width: 30%;
+            border-radius: 3rem;
+            position: absolute;
+            margin-top: 4rem;
+            margin-left: 3rem;
+            z-index: -3;
+        }
+
+        .image2 {
+            width: 12%;
+            border-radius: 2rem;
+            position: absolute;
+            margin-top: 15.5rem;
+            margin-left: 20rem;
+            border: 1rem solid white;
+        }
+
+        .section_bg2 {
+            width: 8%;
+            background-color: #8ed1fc;
+            height: 6rem;
+            border-radius: 1.5rem;
+            position: absolute;
+            z-index: -2;
+            margin-top: 24rem;
+            margin-left: 18rem;
+
+        }
+
+        #main1_aboutus_content {
+            margin-left: 50rem;
+            width: 35%;
+
+        }
+
+        .main1_aboutus_heading {
+            font-size: 2rem;
+            color: #8ed1fc;
+            letter-spacing: 0.05rem;
+        }
+
+        .main1_aboutus_content1 {
+            font-size: 3rem;
+        }
+
+        .section_bg1:hover {
+            background-color: aqua;
+        }
+
+        .main1_aboutus_content2 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .main1_aboutus_content3 ul {
+
+            margin-top: 2rem;
+        }
+
+        .elic_model {
+            font-size: 2rem;
+
+        }
+
+        .elic_model1 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .elic_model2 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .elic_model3 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .elic_model4 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .main1_aboutus_content3 ul li {
+            list-style: disc;
+        }
+
+        .message_image_content1 {
+            margin-left: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .message_image_content2 {
+            margin-left: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .main1_aboutus_content4 ul {
+            display: flex;
+            margin-top: 2rem;
+        }
+
+        .main1_aboutus_content4 ul li {
+            list-style: none;
+        }
+
+        .quality_image_content1 {
+            margin-left: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .quality_image_content2 {
+            margin-left: 3rem;
+            font-size: 1.2rem;
+        }
+
+        /* domain css */
+        #main2_domain {
+            background-image: url(image/bg1.jpg);
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 10rem;
+        }
+
+        #main2_domain ul {
+            display: flex;
+            margin-bottom: 0rem;
+            padding-bottom: 3rem;
+        }
+
+        #main2_domain ul li {
+            list-style: none;
+        }
+
+        .domain_content_description {
+            width: 80%;
+            margin-top: 5rem;
+            margin-left: 8rem;
+
+        }
+
+        .domain_heading {
+            color: #8ed1fc;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .domain_content1 {
+            color: white;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        .domain_content2 {
+            color: white;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+
+        .domain_content_images {
+            margin-right: 15rem;
+            margin-top: 5rem;
+            width: 90%;
+
+        }
+
+        .domain_ros_design {
+            width: 70%;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-left: 1rem;
+            border: 1px solid black;
+        }
+
+        .ros_design_image {
+            background-color: #8ed1fc;
+            padding: 1rem;
+            border-radius: 100%;
+            width: 20%;
+            margin-left: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .ros_design_content1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-left: 18%;
+            margin-bottom: 1rem;
+        }
+
+        .domain_ros {
+            width: 60%;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-left: 1rem;
+        }
+
+        .ros_design_image {
+            background-color: #8ed1fc;
+            padding: 1rem;
+            border-radius: 100%;
+            width: 20%;
+            margin-left: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .ros_content1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-left: 40%;
+            margin-bottom: 1rem;
+        }
+
+        .domain_aiml {
+            width: 60%;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-left: 1rem;
+
+        }
+
+        .aiml_image {
+            background-color: #8ed1fc;
+            padding: 1rem;
+            border-radius: 100%;
+            width: 20%;
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .aiml_content1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-left: 30%;
+            margin-bottom: 1rem;
+        }
+
+        .domain_web {
+            width: 60%;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .web_image {
+            background-color: #8ed1fc;
+            padding: 1rem;
+            border-radius: 100%;
+            width: 20%;
+            margin-left: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .web_content1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-left: 27%;
+            margin-bottom: 1rem;
+        }
+
+
+
+
+
+        #main3_choose {
+            background-image: url(image/bg3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+
+        #main3_choose ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #main3_choose ul li {
+            list-style: none;
+        }
+
+        .choose_heading {
+            color: white;
+            font-size: 4rem;
+            font-weight: 500;
+            text-align: center;
+            padding-top: 5rem;
+        }
+
+        .choose_image1 {
+            margin-left: 2rem;
+
+        }
+
+
+        .ask_querry {
+            width: 23rem;
+            background-color: #23283c;
+            border-radius: 2rem;
+            height: 28rem;
+            margin-top: 8rem;
+            margin-left: 5rem;
+
+        }
+
+        .form_name {
+            margin-left: 40px;
+            font-size: larger;
+            margin-bottom: 10px;
+            padding-top: 2rem;
+            color: white;
+        }
+
+        .form_mobile {
+            margin-left: 40px;
+            font-size: larger;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .form_email {
+            color: white;
+            margin-left: 40px;
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+
+        .form_message {
+            margin-left: 40px;
+            font-size: larger;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .input1 {
+            padding: 5px;
+            border: 2px solid black;
+            width: 260px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .input2 {
+            padding: 5px;
+            border: 2px solid black;
+            width: 260px;
+            border-radius: 10px;
+            height: 5rem;
+            margin-top: 5px;
+        }
+
+        label {
+            margin-bottom: 3px;
+        }
+
+        .button {
+            background-color: rgb(209, 224, 219);
+            font-size: large;
+            font-weight: 300;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            margin-left: 8rem;
+            margin-top: 5px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (min-width:1150px) and (max-width:1310px) {
+            .navbar ul li a {
+                font-size: 1rem;
+            }
+
+            .navbar_content1 {
+                font-weight: 600;
+                font-size: 4rem;
+                margin-left: 15rem;
+            }
+
+            .navbar_image {
+                width: 95%;
+                margin-left: 4rem;
+            }
+
+            .aboutus_section1 {
+                margin-top: 6rem;
+                margin-left: 7rem;
+            }
+
+            #main1_aboutus_content {
+                margin-left: 42rem;
+            }
+
+            .section_bg1 {
+                width: 25%;
+                height: 15rem;
+            }
+
+            .image2 {
+                margin-top: 13.5rem;
+                margin-left: 16rem;
+            }
+
+            .section_bg2 {
+                height: 5rem;
+                margin-top: 20rem;
+                margin-left: 15rem;
+
+            }
+
+            .domain_ros_design {
+                width: 60%;
+                background-color: white;
+                border-radius: 1rem;
+                padding: 2rem;
+                margin-left: 1rem;
+                border: 1px solid black;
+            }
+
+            .domain_content_images {
+                margin-right: 10rem;
+                margin-top: 6rem;
+                margin-left: 2rem;
+            }
+
+            .robot_internal {
+                width: 17rem;
+            }
+
+            .robot_stand {
+                width: 20rem;
+            }
+        }
+
+
+
+        @media (min-width:1000px) and (max-width:1150px) {
+            .navbar ul li a {
+                font-size: 1rem;
+            }
+
+            .navbar_content1 {
+                font-weight: 400;
+                font-size: 3rem;
+                margin-left: 10rem;
+                width: 90%;
+                margin-top: 3rem;
+            }
+
+            .navbar_image {
+                width: 100%;
+
+            }
+
+            .aboutus_section1 {
+                margin-top: 6rem;
+                margin-left: 7rem;
+            }
+
+            #main1_aboutus_content {
+                margin-left: 40rem;
+            }
+
+            .section_bg1 {
+                width: 25%;
+                height: 12rem;
+            }
+
+            .image1 {
+                margin-top: 3rem;
+            }
+
+            .image2 {
+                margin-top: 10.5rem;
+                margin-left: 16rem;
+            }
+
+            .section_bg2 {
+                margin-top: 16.5rem;
+                margin-left: 15rem;
+                height: 4.5rem;
+
+            }
+
+            #main1_aboutus_content {
+                margin-left: 37rem;
+            }
+
+            .main1_aboutus_content2 {
+                font-size: 1.3rem;
+            }
+
+            .main1_aboutus_content1 {
+                font-size: 2.5rem;
+            }
+
+            #main2_domain {
+                margin-top: 5rem;
+            }
+
+            .domain_content_images {
+                margin-right: 10rem;
+                margin-top: 10rem;
+                margin-left: 3rem;
+            }
+
+            .domain_heading {
+                color: #8ed1fc;
+                font-size: 2.2rem;
+                font-weight: 600;
+            }
+
+            .domain_content1 {
+                color: white;
+                font-size: 1.6rem;
+                margin-top: 1rem;
+            }
+
+            .domain_content2 {
+                color: white;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+
+            .domain_ros_design {
+                width: 60%;
+                background-color: white;
+                border-radius: 1rem;
+                padding: 2rem;
+                margin-left: 1rem;
+                border: 1px solid black;
+            }
+
+            .robot_internal {
+                width: 15rem;
+            }
+
+            .robot_stand {
+                width: 19rem;
+            }
+
+            .choose_heading {
+                font-size: 3rem;
+                padding-top: 4rem;
+            }
+
+
+            .ask_querry {
+                width: 22rem;
+
+                height: 27rem;
+                margin-top: 3rem;
+                margin-left: 4rem;
+
+            }
+
+
+
+        }
+
+
+        @media (min-width:768px) and (max-width:1000px) {
+            .navbar ul li a {
+                font-size: 1rem;
+            }
+
+            .home {
+                margin-left: 2rem;
+            }
+
+            .navbar ul li {
+                font-size: 1.4rem;
+            }
+
+            .navbar ul li a {
+                font-size: 1rem;
+            }
+
+
+            .navbar_content1 {
+                font-weight: 400;
+                font-size: 2rem;
+                margin-left: 5rem;
+                width: 70%;
+                margin-top: 3rem;
+            }
+
+            .navbar_image {
+                width: 100%;
+
+            }
+
+            .aboutus_section1 {
+                margin-top: 5rem;
+                margin-left: 4rem;
+            }
+
+
+
+            .section_bg1 {
+                width: 27%;
+                height: 11rem;
+            }
+
+            .image1 {
+                margin-top: 2rem;
+                margin-left: 1.5rem;
+            }
+
+            .image2 {
+                margin-top: 8rem;
+                margin-left: 12rem;
+            }
+
+            .section_bg2 {
+                margin-top: 13rem;
+                margin-left: 11rem;
+                height: 4.5rem;
+
+            }
+
+            #main1_aboutus_content {
+                margin-left: 30rem;
+            }
+
+            .main1_aboutus_content2 {
+                font-size: 1.1rem;
+            }
+
+            .main1_aboutus_content1 {
+                font-size: 1.7rem;
+            }
+
+            .elic_model {
+                font-size: 1.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model1 {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model2 {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model3 {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model4 {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
+
+            #main2_domain {
+                margin-top: 3rem;
+            }
+
+            .domain_content_description {
+                width: 90%;
+
+                margin-top: 2rem;
+                margin-left: 3rem;
+
+            }
+
+            .domain_content_images {
+                margin-right: 5rem;
+                margin-top: 4rem;
+                margin-left: 2rem;
+            }
+
+            .domain_heading {
+
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .domain_content1 {
+
+                font-size: 1.4rem;
+                margin-top: 1rem;
+            }
+
+            .domain_content2 {
+
+                font-size: 1rem;
+                margin-top: 0.5rem;
+            }
+
+            .domain_ros_design {
+                width: 80%;
+                padding: 0.9rem;
+                margin-left: 0rem;
+
+            }
+
+            .ros_design_content1 {
+                font-size: 1.3rem;
+
+                margin-left: 16%;
+                margin-bottom: 0.5rem;
+            }
+
+            .domain_ros {
+                width: 70%;
+                margin-left: 1rem;
+            }
+
+            .ros_design_image {
+
+                margin-left: 3rem;
+
+            }
+
+            .ros_content1 {
+
+                margin-left: 35%;
+
+            }
+
+
+
+
+
+            .aiml_content1 {
+
+                font-weight: 700;
+
+
+            }
+
+
+
+
+
+            .web_content1 {
+
+                margin-left: 25%;
+
+            }
+
+
+
+
+
+
+            .robot_internal {
+                width: 10rem;
+            }
+
+            .robot_stand {
+                width: 15rem;
+            }
+
+            .choose_heading {
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
+
+
+            .ask_querry {
+                width: 18rem;
+
+                height: 22rem;
+                margin-top: 0.7rem;
+                margin-left: 3rem;
+
+            }
+
+            .form_name {
+
+                font-size: medium;
+                margin-bottom: 8px;
+                padding-top: 1rem;
+            }
+
+            .form_mobile {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_email {
+
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_message {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .input1 {
+                padding: 5px;
+
+                width: 200px;
+
+                margin-top: 2px;
+            }
+
+            .input2 {
+                padding: 2px;
+                width: 200px;
+                border-radius: 10px;
+                height: 4rem;
+                margin-top: 4px;
+            }
+
+            label {
+                margin-bottom: 1px;
+            }
+
+            .button {
+                background-color: rgb(209, 224, 219);
+                font-size: medium;
+                font-weight: 300;
+                padding: 5px;
+                width: 100px;
+                border-radius: 15px;
+                margin-left: 6rem;
+                margin-top: 3px;
+            }
+        }
+
+        @media (min-width:568px) and (max-width:768px) {
+            .navbar ul li a {
+                font-size: 0.7rem;
+            }
+
+            .home {
+                margin-left: 1rem;
+            }
+
+            .navbar ul li {
+                font-size: 1rem;
+            }
+
+
+
+
+            .navbar_content1 {
+                font-weight: 400;
+                font-size: 1.3rem;
+                margin-left: 5rem;
+                width: 70%;
+                margin-top: 0rem;
+            }
+
+            .navbar_image {
+                width: 100%;
+                margin-top: 0rem;
+            }
+
+            .aboutus_section1 {
+                margin-top: 5rem;
+                margin-left: 4rem;
+            }
+
+
+
+            .section_bg1 {
+                width: 25%;
+                height: 7rem;
+                border-radius: 1.5rem;
+            }
+
+            .image1 {
+                margin-top: 1rem;
+                margin-left: 1rem;
+                border-radius: 1.5rem;
+            }
+
+            .image2 {
+                margin-top: 5.4rem;
+                margin-left: 9rem;
+                border: 0.8rem solid white;
+            }
+
+            .section_bg2 {
+                margin-top: 9.5rem;
+                margin-left: 7.5rem;
+                height: 3rem;
+                border-radius: 1rem;
+
+            }
+
+            #main1_aboutus_content {
+                margin-left: 23rem;
+            }
+
+            .main1_aboutus_content2 {
+                font-size: 0.7rem;
+            }
+
+            .main1_aboutus_content1 {
+                font-size: 0.9rem;
+            }
+
+            .elic_model {
+                font-size: 1rem;
+                margin-top: 0.2rem;
+            }
+
+            .elic_model1 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model2 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model3 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model4 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            #main2_domain {
+                margin-top: 2rem;
+            }
+
+            .domain_content_description {
+                width: 100%;
+
+                margin-top: 1rem;
+                margin-left: 1rem;
+
+            }
+
+
+
+            .domain_content_images {
+                margin-right: 5rem;
+                margin-top: 4rem;
+                margin-left: 2rem;
+            }
+
+            .domain_heading {
+
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .domain_content1 {
+
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+
+            .domain_content2 {
+
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
+
+            .domain_ros_design {
+                width: 80%;
+                padding: 0.9rem;
+                margin-left: 0rem;
+
+            }
+
+            .ros_design_content1 {
+                font-size: 1.3rem;
+
+                margin-left: 16%;
+                margin-bottom: 0.5rem;
+            }
+
+            .domain_ros {
+                width: 70%;
+                margin-left: 1rem;
+            }
+
+            .ros_design_image {
+
+                margin-left: 3rem;
+
+            }
+
+            .ros_content1 {
+
+                margin-left: 35%;
+
+            }
+
+
+
+
+
+            .aiml_content1 {
+
+                font-weight: 700;
+
+
+            }
+
+
+
+
+
+            .web_content1 {
+
+                margin-left: 25%;
+
+            }
+
+
+
+
+
+
+            .robot_internal {
+                width: 0rem
+            }
+
+            .robot_stand {
+                width: 14rem;
+            }
+
+            .choose_heading {
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
+
+
+            .ask_querry {
+                width: 18rem;
+
+                height: 22rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+
+            }
+
+            .form_name {
+
+                font-size: medium;
+                margin-bottom: 8px;
+                padding-top: 1rem;
+            }
+
+            .form_mobile {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_email {
+
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_message {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .input1 {
+                padding: 5px;
+
+                width: 200px;
+
+                margin-top: 2px;
+            }
+
+            .input2 {
+                padding: 2px;
+                width: 200px;
+                border-radius: 10px;
+                height: 4rem;
+                margin-top: 4px;
+            }
+
+            label {
+                margin-bottom: 1px;
+            }
+
+            .button {
+                background-color: rgb(209, 224, 219);
+                font-size: medium;
+                font-weight: 300;
+                padding: 5px;
+                width: 100px;
+                border-radius: 15px;
+                margin-left: 6rem;
+                margin-top: 3px;
+            }
+        }
+
+
+        @media (max-width:567px) {
+
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+
+            .navbar ul li a {
+                font-size: 0.7rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .home {
+                margin-left: 0rem;
+            }
+
+            .navbar ul li {
+                font-size: 1rem;
+            }
+
+
+            #navbar_content ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+            .navbar_content1 {
+                font-weight: 400;
+                font-size: 1.4rem;
+                margin-left: 0rem;
+                width: 70%;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .navbar_image {
+                width: 70%;
+                margin-top: 0rem;
+                margin-left: 10%;
+            }
+
+       
+
+
+            .aboutus_section1 {
+               display: none;
+            }
+
+
+
+           
+
+            
+            
+
+            #main1_aboutus_content {
+                margin-left: 30%;
+                
+                text-align: center;
+            }
+
+            .main1_aboutus_content2 {
+                font-size: 0.7rem;
+            }
+
+            .main1_aboutus_content1 {
+                font-size: 0.9rem;
+            }
+
+            .elic_model {
+                font-size: 1rem;
+                margin-top: 0.2rem;
+            }
+
+            .elic_model1 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model2 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model3 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+            .elic_model4 {
+                font-size: 0.7rem;
+                margin-top: 0.5rem;
+            }
+
+
+
+
+
+            #main2_domain {
+                margin-top: 2rem;
+            }
+            #main2_domain ul {
+            display: block;
+            margin-bottom: 0rem;
+            padding-bottom: 3rem;
+        }
+
+            .domain_content_description {
+                width: 80%;
+                padding: 1rem;
+                padding-right: 1rem;
+                margin-top: 1rem;
+                margin-left: 0rem;
+
+            }
+
+
+
+            .domain_content_images {
+                margin-right: 5rem;
+                margin-top: 2rem;
+                margin-left: 2rem;
+            }
+
+            .domain_heading {
+
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .domain_content1 {
+
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+
+            .domain_content2 {
+
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
+
+            .domain_ros_design {
+                width: 50%;
+                padding: 0.9rem;
+                margin-left: 20%;
+                align-items: center;
+                margin-bottom: 1rem;
+
+            }
+
+            .ros_design_content1 {
+                font-size: 1.3rem;
+
+                margin-left: 16%;
+                margin-bottom: 0.5rem;
+            }
+
+            .domain_ros {
+                width: 70%;
+                margin-left: 1rem;
+            }
+
+            .ros_design_image {
+
+                margin-left: 3rem;
+
+            }
+
+            .ros_content1 {
+
+                margin-left: 35%;
+
+            }
+
+
+
+
+
+            .aiml_content1 {
+
+                font-weight: 700;
+
+
+            }
+
+
+
+
+
+            .web_content1 {
+
+                margin-left: 25%;
+
+            }
+
+
+
+
+
+            #main3_choose ul {
+            display: block;
+            justify-content: space-between;
+            margin-left: 10%;
+        }
+            .robot_internal {
+                width: 0rem
+            }
+
+            .robot_stand {
+                width: 14rem;
+                margin-left: 10%;
+            }
+
+            .choose_heading {
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
+
+
+            .ask_querry {
+                width: 18rem;
+
+                height: 22rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+
+            }
+
+            .form_name {
+
+                font-size: medium;
+                margin-bottom: 8px;
+                padding-top: 1rem;
+            }
+
+            .form_mobile {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_email {
+
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .form_message {
+
+                font-size: medium;
+                margin-bottom: 8px;
+            }
+
+            .input1 {
+                padding: 5px;
+
+                width: 200px;
+
+                margin-top: 2px;
+            }
+
+            .input2 {
+                padding: 2px;
+                width: 200px;
+                border-radius: 10px;
+                height: 4rem;
+                margin-top: 4px;
+            }
+
+            label {
+                margin-bottom: 1px;
+            }
+
+            .button {
+                background-color: rgb(209, 224, 219);
+                font-size: medium;
+                font-weight: 300;
+                padding: 5px;
+                width: 100px;
+                border-radius: 15px;
+                margin-left: 6rem;
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section >
+    <header>
+        <section id="main_header" data-aos="zoom-in">
+            <nav>
+                <section class="navbar">
+                    <ul>
+                        <li class="logo_name">RoSPinoT</li>
+                        <li class="home"><a class="home_link" href="#">HOME</a></li>
+                        <li class="about"><a class="about_link" href="#main1_aboutus_content">ABOUT US</a></li>
+                        <li class="services"><a class="services_link" href="#main2_domain">DOMAIN</a></li>
+                        <li class="projects"><a class="projects_link" href="image/project.html">PROJECTS</a></li>
+                        <li class="contact_us"><a class="contactus_link" href="#main3_choose">NEED US</a></li>
+                        <li class="team_members"><a class="team_link" href="#">TEAM MEMBERS</a></li>
+                    </ul>
+                </section>
+            </nav>
+            <section id="navbar_content" data-aos="zoom-in">
+                <ul>
+
+                    <li class="navbar_content1">Robot Operating System using Python Intelligence with Node open
+                        Technology.</li>
+                    <li class="navbar_content2"><img class="navbar_image" src="image/robo_body.png" alt="robot_image">
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section id="main1_aboutus" data-aos="zoom-in">
+            <section class="aboutus_section1">
+                <section class="section_bg1"></section>
+                <section class="aboutus_image1">
+                    <img class="image1" src="image/bg2.jpg" alt="image">
+                </section>
+                <section class="aboutus_image2">
+                    <img class="image2" src="image/robo_hand.png" alt="image_hand">
+                </section>
+                <section class="section_bg2"></section>
+            </section>
+        </section>
+        <section id="main1_aboutus_content" data-aos="zoom-in">
+            <section class="main1_aboutus_heading">ABOUT US</section>
+            <section class="main1_aboutus_content1">When there's change , there's opportunity</section>
+            <section class="main1_aboutus_content2">
+                To serve as a 'Centre of learning' dedicated to disseminating knowledge pertaining to Technical skills
+                in the field of Computer Science and Information Technology among students.</section>
+
+            <section class="main1_aboutus_content3" data-aos="zoom-in">
+                <ul>
+                    <p class="elic_model">Elic Model</p>
+                    <li class="elic_model1">We Explore</li>
+                    <li class="elic_model2">We Learn</li>
+                    <li class="elic_model3">We Implement</li>
+                    <li class="elic_model4">We Create</li>
+                </ul>
+            </section>
+
+        </section>
+    </main>
+    <main id="main2_domain" data-aos="zoom-in">
+        <ul>
+            <li>
+                <section class="domain_content_description" data-aos="zoom-in">
+                    <section class="domain_heading">Domain We Provide</section>
+                    <section class="domain_content2">Designing- DIC believes in highlighting the essence of having a
+                        creative bent of mind by engaging the abstract, imaginative and creative qualities of the young
+                        minds into the field of designing through various in demand tools like Fusion 360 which gives it
+                        an upper edge in visualizing the same.</section>
+                    <section class="domain_content2">ROS- As the name suggests, RosPinot explores the intricacies
+                        concerning the vastness of the world of Robots through Ros (Robot Operating System) and
+                        motivates the students to involve in this interesting domain of ROS.</section>
+                    <section class="domain_content2">Web Development- Everything feels lost and loses its glimmer due to
+                        the lack of extenuating their attributes and USP’s, which often finds its cue in the field of
+                        Web development, hence DIC makes sure to provide a domain of Web development to keep up with the
+                        world of effective representation and access to resources at a click of a finger.</section>
+                    <section class="domain_content2">
+                        <section class="domain_content2">Web Development- Everything feels lost and loses its glimmer
+                            due to the lack of extenuating their attributes and USP’s, which often finds its cue in the
+                            field of Web development, hence DIC makes sure to provide a domain of Web development to
+                            keep up with the world of effective representation and access to resources at a click of a
+                            finger.</section>
+                    </section>
+                </section>
+            </li>
+            <li>
+                <section class="domain_content_images">
+                    <ul>
+                        <li>
+                            <section class="domain_ros_design" data-aos="zoom-in">
+                                <section class="ros_design_image"><img src="image/roboo.png" alt="roboo"></section>
+                                <section class="ros_design_content1">ROS Design</section>
+                                <section class="ros_design_content">Creates 3-dimensional design that can be implemented
+                                    on ROS .</section>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="domain_ros_design" data-aos="zoom-in">
+                                <section class="ros_design_image"><img src="image/roboo.png" alt="roboo"></section>
+                                <section class="ros_content1">ROS</section>
+                                <section class="ros_design_content">ROS consists of software libraries and tools that
+                                    help you build robot applications</section>
+                            </section>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <section class="domain_ros_design" data-aos="zoom-in">
+                                <section class="ros_design_image"><img src="image/roboo.png" alt="roboo"></section>
+                                <section class="web_content1">Web-Dev</section>
+                                <section class="ros_design_content"> Building the application from scratch using
+                                    different tools like HTML,CSS & JavaScript .</section>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="domain_ros_design" data-aos="zoom-in">
+                                <section class="ros_design_image"><img src="image/roboo.png" alt="roboo"></section>
+                                <section class="aiml_content1">AI-ML</section>
+                                <section class="ros_design_content">AI helps in building smart machines performs
+                                    intelligent tasks with the help of machine learning. </section>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+    </main>
+    <main id="main3_choose" data-aos="zoom-in">
+        <section class="choose_heading"> Need Any Help !!!</section>
+        <ul>
+            <li>
+                <section class="choose_image1"><img class="robot_internal" src="image/robo_internal.png"
+                        alt="robo_body"></section>
+            </li>
+            <li>
+                <section class="ask_querry" data-aos="zoom-in">
+
+                    <form action="#">
+                        <section class="form_name">
+                            <label for="myName">Name : </label><br>
+                            <input class="input1" type="text" id="myname" placeholder="enter your name" required>
+                        </section>
+                        <section class="form_mobile">
+                            <label for="myph">Mobile : </label><br>
+                            <input class="input1" type="number" id="myph" placeholder="enter your mobile number"
+                                required><br>
+                        </section>
+                        <section class="form_email">
+                            <label for="myemail">Email-Id : </label><br>
+                            <input class="input1" type="email" id="myemail" placeholder="enter your email-id"
+                                required><br>
+                        </section>
+                        <section class="form_message">
+                            <label for="my_message">Message</label><br>
+                            <input class="input2" type="text" id="my_message" placeholder="enter your message" required>
+                        </section>
+
+
+                        <section>
+                            <button class="button" type="submit">Submit</button>
+                        </section>
+                    </form>
+                </section>
+            </li>
+
+            <li>
+                <section class="choose_image2"><img class="robot_stand" src="image/robo_stand.png" alt="robo_internal">
+                </section>
+            </li>
+
+        </ul>
+    </main>
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            offset: 300,
+            duration: 1000,
+            delay: 500,
+        }
+      );
+    </script>
+</body>
+
+</html>
